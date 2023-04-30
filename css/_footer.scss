@@ -1,0 +1,70 @@
+.footer{
+    background: url(../images/finishbg.png) no-repeat;
+    background-size: 100%;
+    height:200px;
+    padding: 10% 0;
+    color: white;
+    @media screen and (max-width:1200px) {
+      
+        @for $i from 1 through 12{
+            .col#{$i}{
+            
+            width: calc((100%/(12/$i)) - 3%);
+            margin: 1.5%;
+            
+            }
+        }
+        background: #5562FF;
+        height: 250px;
+        padding: 50px;
+        
+    }
+    @media screen and (max-width:720px) {
+      
+        @for $i from 1 through 12{
+            .col#{$i}{
+            
+        width: 100%;
+            
+            }
+        }
+        height: 400px;
+     
+        
+    }
+    &-one{
+   
+       h3{
+        @media screen and (max-width:360px) {
+            text-align: center;
+        }
+      font-size: 40px;
+      font-weight: 300;
+        span{
+            font-weight: bold;
+            display: block;
+        }
+       }
+       a{
+        text-decoration: none;
+        background: #FED000;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    }
+    &-two{
+        @media screen and (max-width:1200px) {
+            padding-bottom: 30px;
+        }
+        h5{
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+       
+        }
+    }
+  
+}

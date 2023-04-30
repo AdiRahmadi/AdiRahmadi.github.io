@@ -1,0 +1,60 @@
+.feature{
+    padding: 5% 0;
+    @media screen and (max-width:1200px) {
+        .spacer30{
+            height: 0;
+        }
+    }
+    @media screen and (max-width:480px){
+   
+        @for $i from 1 through 12{
+            .col#{$i}{
+               width: 100%;
+            
+            }
+        }
+ 
+    }
+
+    .box{
+        @media screen and (max-width:1200px) {
+            margin: auto;
+        }
+        @media screen and (max-width:680px) {
+            height: 200px;
+            width: 200px;
+            h2{
+                font-size: 10px;
+            }
+        }
+    
+        @media screen and (max-width:480px) {
+            height: 250px;
+            width: 250px;
+            h2{
+                font-size: 60px;
+            }
+      
+        }
+        
+        background: #5562FFD4;
+        height: 250px;
+        width: 250px;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        h2{
+            color: white;
+            font-size: 60px;
+        }
+        p{
+            color: white;
+            font-weight: bold;
+          
+        }
+    }
+}
